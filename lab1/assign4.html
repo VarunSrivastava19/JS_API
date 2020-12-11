@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embedding Script tag in HTML Document</title>
+        <script>
+            var headParam = 10;
+        </script>
+        <hr>
+    </head>
+    <body>
+        <script>
+            var bodyParam = 5;
+        </script>
+        
+        <script src="./common.js"></script>
+        <script>
+            var sum = addNumbers(headParam, bodyParam);
+        </script>
+        <hr>
+    </body>
+</html>
