@@ -1,0 +1,11 @@
+table {
+    border: 5px double darkslategray;
+}
+
+th {
+    background-color: #ccc;
+}
+
+body tr:nth-child(even) {
+    background-color: lightgreen;
+}
