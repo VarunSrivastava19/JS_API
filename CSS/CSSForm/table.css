@@ -1,9 +1,9 @@
 body {
     font-family: Roboto, sans-serif;
     margin: 0 auto;
-    background-color:  #46107c;
+    background-color: #A7A0F0;
     padding: 10px;
-    color: #effbe3;
+    color: #100f18;
 }
 
 section {
@@ -12,8 +12,8 @@ section {
 }
 
 .topBox {
-    border: 1px solid #effbe3;
-    border-radius: 10px;
+    border: 2px solid #effbe3;
+    border-radius: 20px;
     display: flex;
     padding: 2px;
     margin: 2px;
@@ -22,7 +22,7 @@ section {
 .flex-child {
     flex: 1;
     border: 2px solid #effbe3;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 2px;
 }
 
