@@ -8,36 +8,63 @@
     <body>
         <header>Registration Form</header>
         <section id = "form">
-            <p>Form</p>
+            <form id="registration">
+                <p>Form</p>
 
-            <div id="form" class="topBox">
-                
-                <div id="form" class="flex-child detailBox">
+                <div id="form" class="topBox">
                     
-                    <!--Details-->
-                    
-                    <div id="form" class="detailType">
+                    <div id="form" class="flex-child detailBox">
                         
-                        <!--Labels like Name/EmpID etc-->
+                        <!--Details-->
+                        
+                        <div id="form" class="detailType">
+                            <label for="empID">Employee ID: </label><br>
+                            <label for="fname">First Name: </label><br>
+                            <label for="lname">Last Name: </label><br>
+                            <p id="dept">Department: </p>
+                            <label for="doj">Date of joining: </label><br>
+                            <label for="mail">Email Address: </label><br>
+                            <label for="contact">Contact No.: </label><br>
+                            <label for="address">Address: </label><br>
+                            <label for="train">Training programs to be attended: </label>
+                            
+                            <!--Labels like Name/EmpID etc-->
+                        </div>
                     </div>
+
+                    <div id="form" class="flex-child inputBox">
+                        
+                        <!--Inputs-->
+                        <div id="form" class="input">
+                            
+                            <!--Inputs, selected/grouped using labels in #detailType-->
+                            <input id="empID" type="number" min="10001" max="15000" autofocus><br>
+                            <input id="fname" type="text" placeholder="Enter first name." minlength="3" maxlength="15"><br>
+                            <input id="lname" type="text" placeholder="Enter last name." minlength="5" maxlength="25"><br>
+                            <input type="radio" id="it" name="dept" value="IT">
+                            <label for="it">IT  </label>
+                            <input type="radio" id="hr" name="dept" value="HR">
+                            <label for="hr">HR  </label>
+                            <input type="radio" id="finance" name="dept" value="Finance">
+                            <label for="finance">Finance  </label>
+                            <input type="radio" id="admin" name="dept" value="Admin">
+                            <label for="admins">Admin  </label><br>
+                            <input id="doj" type="date" placeholder="mm-dd-yyyy" min="2020-12-02" max="2021-12-31"><br>
+                            <input id="mail" type="email" ><br>
+                            <input id="empID" type="number" min="10000" max="30000"><br>                            
+                            <input id="empID" type="number" min="10000" max="30000"><br>
+                            <input id="empID" type="number" min="10000" max="30000"><br>
+
+                        </div>
+
+                        <div id="form" class="flex-child submission">
+                            
+                            <!--Submit or cancel buttons-->
+                        </div>
+                    </div>
+
                 </div>
-
-                <div id="form" class="flex-child inputBox">
-                    
-                    <!--Inputs-->
-                    <div id="form" class="input">
-                        
-                        <!--Inputs, selected/grouped using labels in #detailType-->
-
-                    </div>
-
-                    <div id="form" class="flex-child submission">
-                        
-                        <!--Submit or cancel buttons-->
-                    </div>
-                </div>
-
-            </div>
+            </form>
         </section>
     </body>
 </html>
