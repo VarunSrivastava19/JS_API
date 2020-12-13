@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 600px) {  
+          #portfolio {
+              display: none;
+          }
+      }
+      
+      #welcome-section {
+      text-align: center;
+          height: 100vh; 
+      padding-top: 45vh;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: #430F77;
+      color: #EFFBE3;
+      }
+  
+  #projects {
+    text-align: center;
+    background: #E7FBD5;
+    color: #430F77;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  #projects a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 1.5em;
+    color: #430F77;
+  }
+  
+  #projects a:hover{
+    background: #120420;
+    color: #EFFBE3;  
+  }
+  
+  #portfolio {
+    text-align: center;
+    background: #E7FBD5;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #430F77;
+  }
+  
+  #portfolio a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 1.5em;
+  }
+  
+  #portfolio a:hover {
+    background: #120420;
+    color: #EFFBE3;
+  }
+  
+      
+      #navbar {  
+          position: fixed;
+          top: 0px;
+          width: 100%;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      background: #23083E;
+      
+      }
+  
+  nav a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 1.5em;
+    color: #EFFBE3;
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+  }
+  
+  nav a:hover {
+    background: #120420;
+  }
+  
+  main {
+    display: grid;
+    grid-template-rows: 100vh auto 300px 100px;
+  }
+  
