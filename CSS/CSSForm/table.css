@@ -1,19 +1,18 @@
 body {
     font-family: Roboto, sans-serif;
     margin: 0 auto;
-    background-color: #effbe3;
-    color: #46107c;
+    background-color:  #46107c;
+    padding: 10px;
+    color: #effbe3;
 }
 
 section {
-    border: 1px solid #46107c;
-    border-radius: 10px;
     padding: 20px;
     margin: 10px;
 }
 
 .topBox {
-    border: 1px solid #7c1010;
+    border: 1px solid #effbe3;
     border-radius: 10px;
     display: flex;
     padding: 2px;
@@ -22,12 +21,16 @@ section {
 
 .flex-child {
     flex: 1;
-    border: 2px solid #467c10;
+    border: 2px solid #effbe3;
     border-radius: 10px;
     padding: 2px;
 }
 
 .flex-child:first-child {
     margin-right: 5px;
+}
+
+h2 {
+    text-align: center;
 }
 
