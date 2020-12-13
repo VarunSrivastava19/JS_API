@@ -20,13 +20,13 @@
                         <div id="form" class="detailType">
                             <label for="empID">Employee ID: </label><br>
                             <label for="fname">First Name: </label><br>
-                            <label for="lname">Last Name: </label><br>
+                            <label for="lname">Last Name: </label>
                             <p id="dept">Department: </p>
                             <label for="doj">Date of joining: </label><br>
                             <label for="mail">Email Address: </label><br>
                             <label for="contact">Contact No.: </label><br>
-                            <label for="address">Address: </label><br>
-                            <label for="train">Training programs to be attended: </label>
+                            <label for="address">Address: </label>
+                            <p id="train">Training programs to be attended: </p>
                             
                             <!--Labels like Name/EmpID etc-->
                         </div>
@@ -40,26 +40,39 @@
                             <!--Inputs, selected/grouped using labels in #detailType-->
                             <input id="empID" type="number" min="10001" max="15000" autofocus><br>
                             <input id="fname" type="text" placeholder="Enter first name." minlength="3" maxlength="15"><br>
-                            <input id="lname" type="text" placeholder="Enter last name." minlength="5" maxlength="25"><br>
-                            <input type="radio" id="it" name="dept" value="IT">
-                            <label for="it">IT  </label>
-                            <input type="radio" id="hr" name="dept" value="HR">
-                            <label for="hr">HR  </label>
-                            <input type="radio" id="finance" name="dept" value="Finance">
-                            <label for="finance">Finance  </label>
-                            <input type="radio" id="admin" name="dept" value="Admin">
-                            <label for="admins">Admin  </label><br>
-                            <input id="doj" type="date" placeholder="mm-dd-yyyy" min="2020-12-02" max="2021-12-31"><br>
-                            <input id="mail" type="email" ><br>
-                            <input id="empID" type="number" min="10000" max="30000"><br>                            
-                            <input id="empID" type="number" min="10000" max="30000"><br>
-                            <input id="empID" type="number" min="10000" max="30000"><br>
+                            <input id="lname" type="text" placeholder="Enter last name." minlength="5" maxlength="25">
+                            <p>
+                                <input type="radio" id="it" name="dept" value="IT">
+                                <label for="it">IT  </label>
+                                <input type="radio" id="hr" name="dept" value="HR">
+                                <label for="hr">HR  </label>
+                                <input type="radio" id="finance" name="dept" value="Finance">
+                                <label for="finance">Finance  </label>
+                                <input type="radio" id="admin" name="dept" value="Admin">
+                                <label for="admins">Admin  </label><br>
 
+                            </p>
+                            <input id="doj" type="date" placeholder="mm-dd-yyyy" max="2020-12-14"><br>
+                            <input id="mail" type="email"><br>
+                            <input id="contact" type="tel" required><br>     <!--add pattern-->                       
+                            <input id="address" type="text">
+                            <p>
+                                <input id="train" type="checkbox" name="web" value="web_basics">
+                                <label for="web">Web Basics  </label>
+                                <input id="train" type="checkbox" name="csharp" value="c_sharp">
+                                <label for="csharp">C#  </label>
+                                <input id="train" type="checkbox" name="entity" value="en_frame">
+                                <label for="entity">Entity Framework  </label>
+                                <input id="train" type="checkbox" name="asp.net" value="asp.net_mvc">
+                                <label for="asp.net">ASP.NET MVC  </label>
+                            </p>
+                            
                         </div>
 
                         <div id="form" class="flex-child submission">
                             
-                            <!--Submit or cancel buttons-->
+                            <input type="submit" value="Register">  
+                            <input type="reset" value="Cancel">
                         </div>
                     </div>
 
