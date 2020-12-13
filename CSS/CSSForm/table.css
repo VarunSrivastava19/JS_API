@@ -16,12 +16,15 @@ section {
     border: 1px solid #7c1010;
     border-radius: 10px;
     display: flex;
+    padding: 2px;
+    margin: 2px;
 }
 
 .flex-child {
     flex: 1;
     border: 2px solid #467c10;
     border-radius: 10px;
+    padding: 2px;
 }
 
 .flex-child:first-child {
