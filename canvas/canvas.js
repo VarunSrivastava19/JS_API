@@ -26,8 +26,8 @@
       
 
       var sources = {
-        darthVader: 'cybage.jpg',
-        yoda: 'download.png'
+        darthVader: 'canvas5.jpg',
+        yoda: 'canvas6.png'
       };
 
       loadImages(sources, function(images) {
