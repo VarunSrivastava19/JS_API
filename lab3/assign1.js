@@ -8,7 +8,7 @@ var second = today.getSeconds();
 document.writeln(date + "<br>");
 if(hour < 12) {
     document.writeln("Good Morning!!!");
-} else if(hour <= 17 && minute <= 1 ) {
+} else if(hour <= 17 && second <= 1 ) {
     document.writeln("Good Afternoon!!!");
 } else {
     document.writeln("Good Evening!!!");
