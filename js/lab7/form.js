@@ -2,6 +2,7 @@
 var isChrome = !!window.chrome; //returns true if user loads our site in Chrome.
 var isFirefox = typeof InstallTrigger !== 'undefined';  //Firefox uses installTrigger to load it's extensions.
 var isIE = /*@cc_on!@*/false || !!document.documentMode;  //returns true if site loads in IE.
+var flag;
 
 if(isChrome) {
     document.getElementById("browser").innerHTML += " Chrome.";
@@ -40,13 +41,16 @@ function handleData()
 {
     var form_data = new FormData(document.querySelector("form"));
     
+    
     if(!form_data.has("hobby"))
     {
         document.getElementById("chk_option_error").style.visibility = "visible";
+        flag = 0;
     }
     else
     {
         document.getElementById("chk_option_error").style.visibility = "hidden";
+        flag=1;
     }
     return false;
 }
@@ -55,3 +59,41 @@ if(!document.querySelector("input:invalid").checkValidity()) {
     document.querySelector("input:invalid").autofocus;
 }
 
+/**If hobby is reading, then type author */
+function isReading() {
+    if(!document.querySelectorAll("checkbox[value=reading]").checked) {
+        //return true;
+        document.getElementById("hobby").style.visibility="hidden";
+        document.getElementById("writer").style.display="none";
+  
+        
+        
+    } else {
+        document.getElementById("hobby").style.visibility="visible";
+        document.getElementById("writer").style.display="block"; 
+       
+        
+    }
+
+}
+
+isReading();
+
+
+//preventDefault for submit
+/*document.querySelector('button[type=submit]').addEventListener('click', function(event){
+    event.preventDefault();
+    
+
+    if(flag===1) {
+        loadSuccess();
+    }
+    
+});
+
+//load Success page
+function loadSuccess() {
+    window.location.href = "./success.html";
+}
+*/
+handleData();

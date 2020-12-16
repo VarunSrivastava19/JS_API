@@ -6,14 +6,10 @@
     </head>
     <body>
         <div id="browser">
-            <!--You're on this page since : 
-            <div id="timespent" onload="getSecs();"></div>
-            You are using 
-            <div id="browser"></div>-->
             You are using 
         </div>
         You are on this page since<div id="timespent"> </div>
-        <form action="success.html" onsubmit="return handleData();">
+        <form onsubmit="return handleData();"> 
             <label for="fname" id="name">Enter First Name: </label>
             <input type="text" id="fname" required><br>
 
@@ -31,8 +27,8 @@
                 Please select at least one option.
             </div>
 
-            
-            <input type="checkbox" name="hobby" value="reading" id="chk_option_error"> 
+
+       <input type="checkbox" name="hobby" value="reading" id="chk_option_error"> 
             <label for="reading" id="hobby">Reading</label><br>
 
             <input type="checkbox" name="hobby" value="movie" id="chk_option_error"> 
@@ -40,6 +36,11 @@
 
             <input type="checkbox" name="hobby" value="photography" id="chk_option_error"> 
             <label for="photography" id="hobby">Photography</label><br>
+            
+            
+            <label for="writer" id="hobby">Favorite Writer: </label>
+            <input type="text" id="writer">
+           
 
 
             <!--<input type="submit" value="Submit" name="submit form">-->
